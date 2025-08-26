@@ -8,24 +8,36 @@
                 <tr>
                     <th scope="col">Código</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Preco</th>
+                    <th scope="col">Preço</th>
                     <th scope="col">Quantidade</th>
                     <th scope="col">Opções</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Teclado Gamer</td>
-                    <td>123,53</td>
-                    <td>7</td>
-                    <td>
-                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <a href="#" type="button" class="btn btn-danger">Editar</a>
-                            <a href="#" type="button" class="btn btn-warning">Excluir</a>
-                        </div>
-                    </td>
-                </tr>
+                <?php
+                    require 'conexao.php';
+
+                    $sql = "SELECT * FROM produtos";
+                    $stmt = $pdo->query($sql);
+                
+                    while ($produto = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo "<tr>";
+                        echo "<td>" . $produto['id'] . "</td>";
+                        echo "<td>" . $produto['nome'] . "</td>";
+                        echo "<td>" . $produto['preco'] . "</td>";
+                        echo "<td>" . $produto['quantidade'] . "</td>";
+                        echo "<td>";
+                        echo "
+                            <div class='btn-group' role='group'>
+                                <a href='form-atualiza.php?id=XXX' type='button' class='btn btn-danger'>Editar</a>
+                                <a href='#' type='button' class='btn btn-warning'>Excluir</a>
+                            </div>
+                        ";
+                        echo "</td>";
+                        echo "</tr>";            
+                    
+                    }
+                ?>
             </tbody>
         </table>
     </div>

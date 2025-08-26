@@ -5,15 +5,19 @@
     <div class="container">
         <h2>Cadastro de Produtos</h2>
 
-        <form action="inserir.php" method="POST">
+        <form action="atualizar.php" method="POST">
+            <?php
+                $id = $_GET['id'];
+                echo "valor passado: $id"
+            ?>
             <div class="mb-3">
-                <input type="text" class="form-control" name="nome" placeholder="Digite o nome do produto">
+                Nome: <input type="text" class="form-control" name="nome">
             </div>
             <div class="mb-3">
-                <input type="decimal" class="form-control" name="preco" placeholder="Digite o preço do produto">
+                Preco: <input type="decimal" class="form-control" name="preco">
             </div>
             <div class="mb-3">
-                <input type="number" class="form-control" name="quantidade" placeholder="Digite a quantidade do produto">
+                Quantidade: <input type="number" class="form-control" name="quantidade">
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>

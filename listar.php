@@ -30,7 +30,7 @@
                         echo "
                             <div class='btn-group' role='group'>
                                 <a href='form-atualiza.php?id=" . $produto['id'] . "' type='button' class='btn btn-warning'>Editar</a>
-                                <a href='#' type='button' class='btn btn-danger'>Excluir</a>
+                                <a href='deletar.php?id=" . $produto['id'] . "' type='button' class='btn btn-danger'>Excluir</a>
                             </div>
                         ";
                         echo "</td>";

@@ -9,7 +9,8 @@
     $stmt->bindParam(':preco', $preco);
     $stmt->bindParam(':quantidade', $quantidade);
     if ($stmt->execute()) {
-        echo "Produto inserido com sucesso!";
+        // echo "Produto inserido com sucesso!";
+        header("location: listar.php");
     } else {
         echo "Erro ao inserir produto.";
     }

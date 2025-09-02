@@ -8,16 +8,31 @@
         <form action="atualizar.php" method="POST">
             <?php
                 $id = $_GET['id'];
-                echo "valor passado: $id"
+                // echo "valor passado: $id";
+
+                require 'conexao.php';
+                $sql = "SELECT * FROM produtos WHERE id = $id";
+                $stmt = $pdo->query($sql);
+                $produto = $stmt->fetch(PDO::FETCH_ASSOC);
+
+                // print_r($produto);
+
+                // while ($produto = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                //     echo "ID: " . $produto['id'] . "<br>";
+                //     echo "Nome: " . $produto['nome'] . "<br>";
+                //     echo "Preço: R$" . $produto['preco'] . "<br>";
+                //     echo "Estoque: " . $produto['estoque'] . "<br><br>";
+                // }
+
             ?>
             <div class="mb-3">
-                Nome: <input type="text" class="form-control" name="nome">
+                Nome: <input type="text" value="<?php echo $produto['nome']; ?>" class="form-control" name="nome">
             </div>
             <div class="mb-3">
-                Preco: <input type="decimal" class="form-control" name="preco">
+                Preco: <input type="decimal" value="<?php echo $produto['preco']; ?>" class="form-control" name="preco">
             </div>
             <div class="mb-3">
-                Quantidade: <input type="number" class="form-control" name="quantidade">
+                Quantidade: <input type="number" value="<?php echo $produto['quantidade']; ?>" class="form-control" name="quantidade">
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>

@@ -63,19 +63,16 @@
 				<div class="col-md-2">
 
 					<div class="footer-menu">
-						<h5>Help</h5>
+						<h5>Páginas</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="#">Help center</a>
+								<a href="index.php">Home</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Report a problem</a>
+								<a href="listar.php">Listar</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Suggesting edits</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Contact us</a>
+								<a href="conexao.php">Conectar ao banco</a>
 							</li>
 						</ul>
 					</div>
@@ -97,7 +94,7 @@
 						<div class="row">
 
 							<div class="col-md-6">
-								<p>© 2025 Todos os direitos reservados. Site desinvolvido por: <a
+								<p>© 2025 Todos os direitos reservados. Site desenvolvido por: <a
 										href="https://github.com/EstevaoLocks" target="_blank">Estevão Oliveira Locks</a></p>
 							</div>
 

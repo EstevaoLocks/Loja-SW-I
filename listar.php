@@ -91,16 +91,13 @@
 						<h5>Help</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="#">Help center</a>
+								<a href="index.php">Home</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Report a problem</a>
+								<a href="listar.php">Listar</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Suggesting edits</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Contact us</a>
+								<a href="conexao.php">Conectar ao banco</a>
 							</li>
 						</ul>
 					</div>

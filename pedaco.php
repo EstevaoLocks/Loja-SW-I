@@ -59,9 +59,6 @@
 									<li class="menu-item"><a href="index.php">Home</a></li>
 									<li class="menu-item"><a href="listar.php" class="nav-link">Lista de Produtos</a></li>
 									<li class="menu-item"><a href="conexao.php" class="nav-link">Conectar</a></li>
-									<li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>
-									<li class="menu-item"><a href="#latest-blog" class="nav-link">Articles</a></li>
-									<li class="menu-item"><a href="#download-app" class="nav-link">Download App</a></li>
 								</ul>
 
 								<div class="hamburger">

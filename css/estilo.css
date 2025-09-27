@@ -4,6 +4,10 @@
     color: aliceblue !important;
 }
 
+.btn-sec {
+    border: 0.1em solid #53270d;
+}
+
 .section-listar {
     margin-top: 3em;
 }
@@ -11,3 +15,34 @@
 .celula {
     padding: 7em !important;
 }
+
+/*
+.a.btn, input[type="button"], input[type="submit"], input[type="reset"], input[type="file"], button {
+    background-image: none;
+    background: var(--accent-color);
+    text-decoration: none !important;
+    display: inline-block;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: 0.75em 1.5em;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} */

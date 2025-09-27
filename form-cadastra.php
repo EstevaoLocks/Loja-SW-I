@@ -16,7 +16,7 @@
                 <input type="number" class="form-control" name="quantidade" placeholder="Digite a quantidade do produto">
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="reset-btn">Submit</button>
             <a href="listar.php" type="button" class="btn-sec btn">Voltar</a>
 
         </form>

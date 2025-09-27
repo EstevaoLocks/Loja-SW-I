@@ -1,0 +1,13 @@
+.btn-sec:hover {
+    background-color: #703310;
+    border-color: #53270d;
+    color: aliceblue !important;
+}
+
+.section-listar {
+    margin-top: 3em;
+}
+
+.celula {
+    padding: 7em !important;
+}

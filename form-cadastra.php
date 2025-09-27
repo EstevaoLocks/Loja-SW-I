@@ -17,6 +17,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="listar.php" type="button" class="btn-sec btn">Voltar</a>
 
         </form>
     </div>
